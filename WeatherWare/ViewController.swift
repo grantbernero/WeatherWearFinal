@@ -34,6 +34,7 @@ class ViewController: UIViewController
         let result = json["currently"].dictionaryValue
         let temperature = result["temperature"]!.stringValue
         print(temperature)
+
         
     }
 }
