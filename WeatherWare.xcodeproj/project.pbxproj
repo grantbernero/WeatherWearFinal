@@ -14,6 +14,7 @@
 		3F295B621E9E790F0096C22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F295B601E9E790F0096C22F /* LaunchScreen.storyboard */; };
 		3F295B6D1E9E790F0096C22F /* WeatherWareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F295B6C1E9E790F0096C22F /* WeatherWareTests.swift */; };
 		3F295B781E9E790F0096C22F /* WeatherWareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F295B771E9E790F0096C22F /* WeatherWareUITests.swift */; };
+		3FBFA6B51EB2419200751570 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFA6B41EB2419200751570 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F295B731E9E790F0096C22F /* WeatherWareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherWareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F295B771E9E790F0096C22F /* WeatherWareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWareUITests.swift; sourceTree = "<group>"; };
 		3F295B791E9E790F0096C22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBFA6B41EB2419200751570 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3F295B571E9E790F0096C22F /* AppDelegate.swift */,
 				3F295B591E9E790F0096C22F /* ViewController.swift */,
+				3FBFA6B41EB2419200751570 /* SwiftyJSON.swift */,
 				3F295B5B1E9E790F0096C22F /* Main.storyboard */,
 				3F295B5E1E9E790F0096C22F /* Assets.xcassets */,
 				3F295B601E9E790F0096C22F /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F295B5A1E9E790F0096C22F /* ViewController.swift in Sources */,
+				3FBFA6B51EB2419200751570 /* SwiftyJSON.swift in Sources */,
 				3F295B581E9E790F0096C22F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,7 @@
 				3F295B7E1E9E790F0096C22F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F295B7F1E9E790F0096C22F /* Build configuration list for PBXNativeTarget "WeatherWareTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				3F295B811E9E790F0096C22F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F295B821E9E790F0096C22F /* Build configuration list for PBXNativeTarget "WeatherWareUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				3F295B841E9E790F0096C22F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
