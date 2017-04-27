@@ -32,7 +32,7 @@ class ViewController: UIViewController
     func parse(json: JSON)
     {
         let result = json["currently"].dictionaryValue
-        let temperature = result["temperature"]!.stringValue
+        let temperature = result["temperature"]!.intValue
         print(temperature)
 
         
