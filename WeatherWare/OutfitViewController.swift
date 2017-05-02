@@ -11,7 +11,7 @@ import UIKit
 class OutfitViewController: UIViewController
 {
 
-    //comment
+    var weatherDetail:WeatherClass!
   override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,6 +25,7 @@ class OutfitViewController: UIViewController
     @IBOutlet weak var jacketPic: UIImageView!
     @IBOutlet weak var extraPic: UIImageView!
     
+    let temperature = weatherDetail.temperature
     
     @IBAction func maleButtonTapped(_ sender: Any)
     {
