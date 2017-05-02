@@ -11,6 +11,11 @@ import UIKit
 class ViewController: UIViewController
 {
     var weather = [[String: String]]()
+   
+    
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,32 +34,30 @@ class ViewController: UIViewController
   
     }
     
+    
+    
     func parse(json: JSON)
     {
         let result = json["currently"].dictionaryValue
         let temperature = result["temperature"]!.intValue
         print(temperature)
         
-        if temperature <= 32
-        {
-            print()
-        }
-        
-        if temperature > 32 && temperature < 60
-        {
-            print()
-        }
-        
-        if temperature >= 60 && temperature < 80
-        {
-            print()
-        }
-        
-        if temperature >= 80
-        {
-            print()
-        }
+    }
+    
+    @IBAction func suggestionsTapped(_ sender: Any)
+    {
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 }
 
