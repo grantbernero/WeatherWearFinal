@@ -11,7 +11,6 @@ import UIKit
 class OutfitViewController: UIViewController
 {
 
-    //comment
   override func viewDidLoad()
     {
         super.viewDidLoad()
