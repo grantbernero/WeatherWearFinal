@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController
 {
     var weather = [[String: String]]()
+    var temperature = 0
+    
+    @IBOutlet weak var tempDisplay: UILabel!
+  
+    tempDisplay = "temperature" 
+    
    
-    
-    
-    
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -39,16 +41,19 @@ class ViewController: UIViewController
     func parse(json: JSON)
     {
         let result = json["currently"].dictionaryValue
-        let temperature = result["temperature"]!.intValue
+        temperature = result["temperature"]!.intValue
         print(temperature)
         
     }
     
-    @IBAction func suggestionsTapped(_ sender: Any)
-    {
-        
-    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let outfitView = segue.destination as! OutfitViewController
+        outfitView.myTemp = temperature
+    }
+
+
     
     
     

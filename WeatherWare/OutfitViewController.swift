@@ -12,9 +12,12 @@ class OutfitViewController: UIViewController
 {
 
     var weatherDetail:WeatherClass!
+    var myTemp = 0
+    
   override func viewDidLoad()
     {
         super.viewDidLoad()
+        print(myTemp)
       
     }
     
@@ -25,51 +28,91 @@ class OutfitViewController: UIViewController
     @IBOutlet weak var jacketPic: UIImageView!
     @IBOutlet weak var extraPic: UIImageView!
     
-    let temperature = weatherDetail.temperature
+//    let temperature = weatherDetail.temperature
     
     @IBAction func maleButtonTapped(_ sender: Any)
     {
-        if temperature <= 32
+        if myTemp <= 32
         {
-            print()
+           let topPic = "M-Sweater"
+           let bottomsPic = "M-LongPants"
+            let shoesPic = "M-WinterBoots"
+            let accesssoriesPic = "M-Scarf"
+            let jacketPic = "M-WinterCoat"
+            let extraPic = "M-Hat"
         }
         
-        if temperature > 32 && temperature < 60
+        if myTemp > 32 && myTemp < 60
         {
-            print()
+            let topPic = "M-LongSleeve"
+            let bottomsPic = "M-LongPants"
+            let shoesPic = "M-RunningShoe"
+            let accesssoriesPic = "M-BaseballCap"
+            let jacketPic = "M-LightJacket"
+            let extraPic = "transparent"
         }
         
-        if temperature >= 60 && temperature < 80
+        if myTemp >= 60 && myTemp < 80
         {
-            print()
+            let topPic = "M-Tshirt"
+            let bottomsPic = "M-Shorts"
+            let shoesPic = "M-RunningShoe"
+            let accesssoriesPic = "M-Sunglasses"
+            let jacketPic = "M-LightJacket"
+            let extraPic = "transparent"
         }
         
-        if temperature >= 80
+        if myTemp >= 80
         {
-            print()
+            let topPic = "M-TankTop"
+            let bottomsPic = "M-Shorts"
+            let shoesPic = "M-RunningShoe"
+            let accesssoriesPic = "M-Sunglasses"
+            let jacketPic = "transparent"
+            let extraPic = "M-SwimSuit"
         }
     }
 
     @IBAction func femaleButtonTapped(_ sender: Any)
     {
-        if temperature <= 32
+        if myTemp <= 32
         {
-            print()
+            let topPic = "F-Sweater"
+            let bottomsPic = "F-LongPants"
+            let shoesPic = "F-WinterBoots"
+            let accesssoriesPic = "M-Gloves"
+            let jacketPic = "WinterCoat"
+            let extraPic = "M-Hat"
         }
         
-        if temperature > 32 && temperature < 60
+        if myTemp > 32 && myTemp < 60
         {
-            print()
+            let topPic = "F-LongSleeve"
+            let bottomsPic = "F-LongPants"
+            let shoesPic = "F-Shoes"
+            let accesssoriesPic = "F-Purse"
+            let jacketPic = "F-LightJacket"
+            let extraPic = "F-LongDress"
         }
         
-        if temperature >= 60 && temperature < 80
+        if myTemp >= 60 && myTemp < 80
         {
-            print()
+            let topPic = "F-ShortSleeve"
+            let bottomsPic = "F-Skirt"
+            let shoesPic = "F-Shoes"
+            let accesssoriesPic = "F-Sunglasses"
+            let jacketPic = "transparent"
+            let extraPic = "ShortDress"
         }
         
-        if temperature >= 80
+        if myTemp >= 80
         {
-            print()
+            let topPic = "F-TankTop"
+            let bottomsPic = "F-Shorts"
+            let shoesPic = "F-FlipFlops"
+            let accesssoriesPic = "F-Sunglasses"
+            let jacketPic = "SleevelessDress"
+            let extraPic = "F-Bakini"
         }
     }
     
