@@ -14,8 +14,6 @@ class ViewController: UIViewController
     var temperature = 0
     
     @IBOutlet weak var tempDisplay: UILabel!
-  
-    tempDisplay = "temperature" 
     
    
     override func viewDidLoad()
@@ -33,6 +31,8 @@ class ViewController: UIViewController
                 parse(json: json)
             }
         }
+        
+        tempDisplay.text = "\(temperature)º"
   
     }
     

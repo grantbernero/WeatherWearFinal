@@ -34,42 +34,42 @@ class OutfitViewController: UIViewController
     {
         if myTemp <= 32
         {
-           let topPic = "M-Sweater"
-           let bottomsPic = "M-LongPants"
-            let shoesPic = "M-WinterBoots"
-            let accesssoriesPic = "M-Scarf"
-            let jacketPic = "M-WinterCoat"
-            let extraPic = "M-Hat"
+            topPic.image = UIImage(named:"M-Sweater")
+           bottomsPic.image = UIImage(named:"M-LongPants")
+            shoesPic.image = UIImage(named:"M-WinterBoots")
+            accessoriesPic.image = UIImage(named:"M-Scarf")
+            jacketPic.image = UIImage(named:"M-WinterCoat")
+            extraPic.image = UIImage(named:"M-Hat")
         }
         
         if myTemp > 32 && myTemp < 60
         {
-            let topPic = "M-LongSleeve"
-            let bottomsPic = "M-LongPants"
-            let shoesPic = "M-RunningShoe"
-            let accesssoriesPic = "M-BaseballCap"
-            let jacketPic = "M-LightJacket"
-            let extraPic = "transparent"
+            topPic.image = UIImage(named:"M-LongSleeve")
+            bottomsPic.image = UIImage(named:"M-LongPants")
+             shoesPic.image = UIImage(named:"M-RunningShoe")
+             accessoriesPic.image = UIImage(named:"M-BaseballCap")
+             jacketPic.image = UIImage(named:"M-LightJacket")
+             extraPic.image = UIImage(named:"transparent")
         }
         
         if myTemp >= 60 && myTemp < 80
         {
-            let topPic = "M-Tshirt"
-            let bottomsPic = "M-Shorts"
-            let shoesPic = "M-RunningShoe"
-            let accesssoriesPic = "M-Sunglasses"
-            let jacketPic = "M-LightJacket"
-            let extraPic = "transparent"
+            topPic.image = UIImage(named:"M-Tshirt")
+             bottomsPic.image = UIImage(named:"M-Shorts")
+            shoesPic.image = UIImage(named:"M-RunningShoe")
+             accessoriesPic.image = UIImage(named:"M-Sunglasses")
+             jacketPic.image = UIImage(named:"M-LightJacket")
+             extraPic.image = UIImage(named:"transparent")
         }
         
         if myTemp >= 80
         {
-            let topPic = "M-TankTop"
-            let bottomsPic = "M-Shorts"
-            let shoesPic = "M-RunningShoe"
-            let accesssoriesPic = "M-Sunglasses"
-            let jacketPic = "transparent"
-            let extraPic = "M-SwimSuit"
+             topPic.image = UIImage(named:"M-TankTop")
+             bottomsPic.image = UIImage(named:"M-Shorts")
+             shoesPic.image = UIImage(named:"M-RunningShoe")
+             accessoriesPic.image = UIImage(named:"M-Sunglasses")
+            jacketPic.image = UIImage(named:"transparent")
+            extraPic.image = UIImage(named:"M-SwimSuit")
         }
     }
 
@@ -77,42 +77,42 @@ class OutfitViewController: UIViewController
     {
         if myTemp <= 32
         {
-            let topPic = "F-Sweater"
-            let bottomsPic = "F-LongPants"
-            let shoesPic = "F-WinterBoots"
-            let accesssoriesPic = "M-Gloves"
-            let jacketPic = "WinterCoat"
-            let extraPic = "M-Hat"
+             topPic.image = UIImage(named:"F-Sweater")
+             bottomsPic.image = UIImage(named:"F-LongPants")
+            shoesPic.image = UIImage(named:"F-WinterBoots")
+             accessoriesPic.image = UIImage(named:"M-Gloves")
+            jacketPic.image = UIImage(named:"WinterCoat")
+             extraPic.image = UIImage(named:"M-Hat")
         }
         
         if myTemp > 32 && myTemp < 60
         {
-            let topPic = "F-LongSleeve"
-            let bottomsPic = "F-LongPants"
-            let shoesPic = "F-Shoes"
-            let accesssoriesPic = "F-Purse"
-            let jacketPic = "F-LightJacket"
-            let extraPic = "F-LongDress"
+             topPic.image = UIImage(named:"F-LongSleeve")
+             bottomsPic.image = UIImage(named:"F-LongPants")
+             shoesPic.image = UIImage(named:"F-Shoes")
+             accessoriesPic.image = UIImage(named:"F-Purse")
+             jacketPic.image = UIImage(named:"F-LightJacket")
+             extraPic.image = UIImage(named:"F-LongDress")
         }
         
         if myTemp >= 60 && myTemp < 80
         {
-            let topPic = "F-ShortSleeve"
-            let bottomsPic = "F-Skirt"
-            let shoesPic = "F-Shoes"
-            let accesssoriesPic = "F-Sunglasses"
-            let jacketPic = "transparent"
-            let extraPic = "ShortDress"
+             topPic.image = UIImage(named:"F-ShortSleeve")
+             bottomsPic.image = UIImage(named:"F-Skirt")
+             shoesPic.image = UIImage(named:"F-Shoes")
+             accessoriesPic.image = UIImage(named:"F-Sunglasses")
+             jacketPic.image = UIImage(named:"transparent")
+             extraPic.image = UIImage(named:"ShortDress")
         }
         
         if myTemp >= 80
         {
-            let topPic = "F-TankTop"
-            let bottomsPic = "F-Shorts"
-            let shoesPic = "F-FlipFlops"
-            let accesssoriesPic = "F-Sunglasses"
-            let jacketPic = "SleevelessDress"
-            let extraPic = "F-Bakini"
+             topPic.image = UIImage(named:"F-TankTop")
+             bottomsPic.image = UIImage(named:"F-Shorts")
+             shoesPic.image = UIImage(named:"F-FlipFlops")
+            accessoriesPic.image = UIImage(named:"F-Sunglasses")
+             jacketPic.image = UIImage(named:"SleevelessDress")
+            extraPic.image = UIImage(named:"F-Bakini")
         }
     }
     
