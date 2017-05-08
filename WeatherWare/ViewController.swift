@@ -44,6 +44,9 @@ class ViewController: UIViewController
         temperature = result["temperature"]!.intValue
         print(temperature)
         
+        //forecast = result["summary"]!.string
+        //forecastPic = result["icon"]!.image 
+        
     }
     
     
