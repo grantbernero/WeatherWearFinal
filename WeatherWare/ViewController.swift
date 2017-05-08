@@ -32,7 +32,7 @@ class ViewController: UIViewController
             }
         }
         
-        tempDisplay.text = "\(temperature)º"
+        tempDisplay.text = "\(temperature)ºF"
   
     }
     
