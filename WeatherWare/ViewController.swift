@@ -32,7 +32,7 @@ class ViewController: UIViewController
             }
         }
         
-        tempDisplay.text = "\(temperature)º"
+        tempDisplay.text = "\(temperature)ºF"
   
     }
     
@@ -43,6 +43,9 @@ class ViewController: UIViewController
         let result = json["currently"].dictionaryValue
         temperature = result["temperature"]!.intValue
         print(temperature)
+        
+        //forecast = result["summary"]!.string
+        //forecastPic = result["icon"]!.image 
         
     }
     
