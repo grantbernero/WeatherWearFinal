@@ -13,6 +13,7 @@ class ViewController: UIViewController
     var weather = [[String: String]]()
     var temperature = 0
     var forecast = ""
+    var iconText = ""
   //  var forecastPic:UIImage? = nil
     
     
@@ -40,7 +41,7 @@ class ViewController: UIViewController
         
         tempDisplay.text = "\(temperature)ºF"
         forecastDisplay.text = "\(forecast)"
-   //     forecastImageDisplay.image = forecastPic
+        forecastImageDisplay.image = UIImage(named: "\(iconText)")
   
     }
     
@@ -52,7 +53,7 @@ class ViewController: UIViewController
         temperature = result["temperature"]!.intValue
         print(temperature)
         forecast = result["summary"]!.stringValue
-     //   forecastPic = result["icon"]!
+        iconText = result["icon"]!.stringValue
         
     }
     
@@ -62,17 +63,6 @@ class ViewController: UIViewController
         let outfitView = segue.destination as! OutfitViewController
         outfitView.myTemp = temperature
     }
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 }
 
