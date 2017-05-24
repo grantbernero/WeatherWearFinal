@@ -37,7 +37,6 @@ class OutfitViewController: UIViewController
             }
         }
 
-        
         if iconText == "snow" || iconText == "cloudy" || iconText == "fog" || iconText == "wind" || iconText == "sleet"
         {
             outfitBackground.image = UIImage(named: "grey")
